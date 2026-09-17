@@ -16,7 +16,7 @@ function CV({ language }) {
 
         <div className="cv-buttons">
           <a
-            href="/CV/CV-Lynda-Bouala.pdf"
+            href="/CV/CV-Lynda.pdf"
             target="_blank"
             rel="noreferrer"
           >
@@ -24,7 +24,7 @@ function CV({ language }) {
           </a>
 
           <a
-            href="/CV/CV-Lynda-Bouala.pdf"
+            href="/CV/CV-Lynda.pdf"
             download
           >
             {t.download}
