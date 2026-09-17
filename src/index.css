@@ -881,6 +881,34 @@ main {
   color: white;
   transform: rotate(90deg);
 }
+.project-features {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.project-features li {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.project-report-link {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: #d9468c;
+  color: white !important;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-report-link:hover {
+  background: #c23679;
+  transform: translateY(-3px);
+}
 
 /* =========================
    MON PARCOURS
@@ -1860,6 +1888,18 @@ body.dark-mode .modal-close {
   background: #252525;
   color: #f06aa5;
 }
+body.dark-mode .project-features li {
+  color: #cfcfcf;
+}
+
+body.dark-mode .project-report-link {
+  background: #d9468c;
+  color: white !important;
+}
+
+body.dark-mode .project-report-link:hover {
+  background: #c23679;
+}
 
 /* =========================
    RESPONSIVE
@@ -2186,7 +2226,28 @@ body.dark-mode .modal-close {
     color: #eeeeee;
   }
 }
+.project-modal {
+  padding: 15px;
+  align-items: center;
+}
 
+.project-modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 35px 25px;
+}
+
+.project-modal-content h2 {
+  font-size: 27px;
+}
+
+.project-modal-content h3 {
+  font-size: 17px;
+}
+
+.project-features li {
+  font-size: 14px;
+}
 @media (max-width: 600px) {
 
   .footer {

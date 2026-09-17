@@ -24,8 +24,7 @@ function Langues({ language }) {
     },
     {
       name: t.kabyle.name,
-      flag: '🗣️',
-      level: t.kabyle.level,
+flag: 'ⵣ',      level: t.kabyle.level,
       width: '100%',
     },
   ]

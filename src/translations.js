@@ -22,6 +22,7 @@ const translations = {
       projectsButton: "Voir mes projets",
       contactButton: "Me contacter",
     },
+
     about: {
       label: "À PROPOS",
       title: "Qui suis-je ?",
@@ -55,6 +56,7 @@ const translations = {
         },
       },
     },
+
     skills: {
       label: "MES COMPÉTENCES",
       title: "Ce que je sais faire",
@@ -85,6 +87,7 @@ const translations = {
           "Utilisation d'outils de développement et travail en environnement collaboratif.",
       },
     },
+
     projects: {
       label: "MES PROJETS",
       title: "Quelques projets réalisés",
@@ -95,46 +98,147 @@ const translations = {
       modalLabel: "PROJET",
       technologies: "Technologies utilisées",
 
-      station: {
-        title: "Station-service",
-        description:
-          "Conception et réalisation d'une base de données pour gérer les informations d'une station-service. Travail réalisé en équipe avec modélisation, développement SQL et exploitation des données.",
-        modalDescription:
-          "Projet réalisé en équipe autour de la conception et de l’exploitation d’une base de données pour une station-service.",
-      },
-
       linux: {
         title: "Environnement Linux",
+
         description:
-          "Mise en place et configuration d'un environnement Linux avec gestion des utilisateurs, permissions, services et différents outils système.",
+          "Installation et configuration d'un environnement Linux, puis mise en place de services système et réseaux dans le cadre de deux projets universitaires.",
+
         modalDescription:
-          "Mise en place et configuration d’un environnement Linux avec gestion des utilisateurs, permissions, services et différents outils système.",
+          "Ce projet regroupe deux SAE réalisées autour d'un environnement Linux. La SAE1.03 porte sur l'installation et la configuration d'un poste de développement, tandis que la SAE2.03 est consacrée à l'installation et à la configuration de services réseaux.",
+
+        sae103:
+          "Installation de Kubuntu sur un PC reconditionné à partir de zéro, avec partitionnement manuel du disque, configuration du réseau Eduroam et mise en place d'un environnement de développement. J'ai installé et configuré notamment Apache, PHP, PostgreSQL, Visual Studio Code, Java et Python. J'ai également travaillé avec le terminal Linux, la gestion des fichiers et répertoires ainsi que les droits d'accès et les propriétaires.",
+
+        sae203:
+          "Mise en place de services réseaux sur l'environnement Linux installé précédemment. Le projet comprend la configuration d'un environnement LAMP avec Apache, PHP et MariaDB, la création d'utilisateurs et de bases de données, ainsi que la mise en place de services FTP avec vsftpd et SSH. J'ai également utilisé VirtualBox et Marionnet pour les travaux réseaux et Wireshark pour analyser les échanges réseau.",
+
+        skills:
+          "Administration Linux, ligne de commande, installation et configuration de services, gestion des utilisateurs et permissions, bases de données, développement web, réseaux, virtualisation et analyse de trames.",
       },
 
-      eaux: {
-        title: "Qualité des eaux",
+      database: {
+        title: "Bases de données",
+
         description:
-          "Conception d'une base de données à partir d'un modèle conceptuel, création de la base et réalisation de requêtes SQL. Les données sont également exploitées avec Python.",
+          "Conception et exploitation de bases de données à travers plusieurs projets universitaires.",
+
         modalDescription:
-          "Conception d’une base de données à partir d’un modèle conceptuel, création de la base et réalisation de requêtes SQL. Les données sont également exploitées avec Python.",
+          "Ce projet regroupe deux SAE autour des bases de données. Elles m'ont permis de travailler sur la modélisation, la création, la manipulation et l'exploitation de bases de données relationnelles.",
+
+        sae104:
+          "La SAE104 m'a permis de travailler sur la conception et l'exploitation d'une base de données, en mettant en pratique la modélisation des données et les requêtes SQL.",
+
+        sae204:
+          "La SAE204 porte sur l'analyse de stations-service et des prix des carburants à partir de données ouvertes. J'ai travaillé sur la modélisation de la base, la création des tables, les relations entre les données, les requêtes SQL ainsi que l'exploitation et l'analyse des données avec Python et Grafana.",
+
+        skills:
+          "Modélisation de données, bases de données relationnelles, SQL, traitement de données, analyse de données et visualisation.",
       },
 
       nuit: {
         title: "La Nuit de l'Info",
+
         description:
-          "Participation à un projet de développement web en équipe. Travail autour de l'interface utilisateur, de l'accessibilité et du numérique responsable.",
+          "Développement en équipe d'une application web autour du numérique inclusif, responsable et durable, dans le cadre de la Nuit de l'Info 2025.",
+
         modalDescription:
-          "Participation à un projet de développement web en équipe. Travail autour de l’interface utilisateur, de l’accessibilité et du numérique responsable.",
+          "Projet réalisé en équipe dans le cadre de la Nuit de l'Info 2025. Le sujet portait sur la démarche NIRD (Numérique Inclusif, Responsable et Durable) et la création d'une application web permettant de sensibiliser différents publics aux enjeux de l'autonomie et de la responsabilité numériques.",
+
+        context:
+          "Le projet s'inscrit dans la démarche NIRD, qui vise à aider les établissements scolaires à réduire leurs dépendances numériques et à adopter progressivement des solutions plus inclusives, responsables et durables.",
+
+        mission:
+          "Notre équipe devait concevoir et développer une application web permettant de faire découvrir la démarche NIRD de manière pédagogique, attractive et engageante. L'application devait notamment encourager la compréhension, la contribution et l'adoption progressive de solutions numériques responsables.",
+
+        features: [
+          "Conception d'une interface web attractive et accessible",
+          "Présentation pédagogique de la démarche NIRD",
+          "Mise en valeur des solutions et alternatives proposées par NIRD",
+          "Création d'une expérience interactive et engageante",
+          "Travail en équipe sur la conception et le développement",
+          "Prise en compte de l'accessibilité et du numérique responsable",
+          "Utilisation de ressources libres de droit",
+        ],
+
+        skills:
+          "Développement web, HTML, CSS, JavaScript, conception d'interface, accessibilité, numérique responsable, travail en équipe et gestion d'un projet dans un temps limité.",
       },
 
       findmyword: {
         title: "FindMyWord",
+
         description:
-          "Développement en Java d'un jeu de devinette de mots. Conception UML et mise en œuvre des principes de programmation orientée objet avec gestion des tentatives et analyse des lettres.",
+          "Développement en binôme d'une application console Java inspirée du jeu Wordle. Le projet met en œuvre les principes de la programmation orientée objet à travers la gestion des joueurs, des parties, des mots et des sources de données.",
+
         modalDescription:
-          "Développement en Java d’un jeu de devinette de mots inspiré de Wordle. Le projet comprend la conception UML et la mise en œuvre des principes de programmation orientée objet, avec gestion des tentatives, validation et analyse des lettres, ainsi que détection de la victoire ou de la défaite.",
+          "Projet réalisé en binôme dans le cadre de la SAÉ 2.01 – Bases de la programmation objet. L'application FindMyWord reprend les principales règles de Wordle : le joueur doit retrouver un mot secret de cinq lettres en six tentatives maximum.",
+
+        context:
+          "Conception et développement d'une application console Java dans le cadre d'une SAÉ consacrée à la programmation orientée objet.",
+
+        features: [
+          "Jeu en multijoueur avec alternance des tours",
+          "Gestion de plusieurs manches",
+          "Calcul dynamique des scores",
+          "Validation des mots saisis",
+          "Analyse des lettres avec les états OK / PRESENT / ABSENT",
+          "Affichage de la grille et de la progression",
+          "Choix aléatoire des mots depuis un fichier JSON",
+          "Tests avec possibilité de fixer le mot secret",
+          "Gestion des erreurs de saisie",
+        ],
+
+        architecture:
+          "L'application est organisée en plusieurs packages afin de séparer les responsabilités : model, view et repository. Cette organisation permet de séparer la logique du jeu, l'affichage et l'accès aux données.",
+
+        classes:
+          "Les principales classes sont Word, StatutLettre, Joueur, Game, WordRepository, RetrieveWordsFromJSON, RetrieveFixeWordsFromJSON et Main.",
+
+        skills:
+          "Java, programmation orientée objet, UML, encapsulation, polymorphisme, JSON, tests unitaires, débogage et travail en binôme.",
+
+        report:
+          "https://docs.google.com/document/d/1mS6qzF9-eZYq88KGqXA3tNKeJfCqsaJIuL-M4hh3828/edit?tab=t.0",
+
+        reportButton: "Voir le rapport ↗",
+      },
+
+      // =====================================
+      // PROJET 05 — POUDLARD
+      // =====================================
+
+      poudlard: {
+        title: "Le nouveau choixpeau pas magique de Poudlard",
+
+        description:
+          "Développement en binôme d'un programme Python permettant de répartir des élèves dans les quatre maisons de Poudlard à partir de leurs réponses à un questionnaire.",
+
+        modalDescription:
+          "Projet réalisé en binôme dans le cadre des SAÉ 1.01 et 1.02. Le projet consiste à développer puis améliorer une méthode informatique de répartition des élèves dans les maisons de Poudlard à partir de leurs réponses à un questionnaire.",
+
+        context:
+          "Dans la SAÉ 1.01, une première méthode répartit les élèves selon leurs réponses à quatre questions associées aux caractéristiques des quatre maisons. Dans la SAÉ 1.02, cette méthode est améliorée grâce à dix questions et à une comparaison des réponses avec celles de références représentant les différentes maisons.",
+
+        features: [
+          "Lecture et traitement de fichiers de réponses",
+          "Création et manipulation de tableaux et dictionnaires",
+          "Répartition des élèves selon leurs réponses",
+          "Mise en place de tests unitaires",
+          "Calcul de la distance euclidienne entre deux réponses",
+          "Classification d'un élève selon la référence la plus proche",
+          "Implémentation de la méthode des k plus proches voisins",
+          "Comparaison expérimentale de différentes méthodes de répartition",
+        ],
+
+        architecture:
+          "La SAÉ 1.01 utilise une structure de données contenant le nom de chaque élève et ses quatre réponses. La SAÉ 1.02 fait évoluer cette structure vers un dictionnaire associant chaque élève à ses dix réponses et utilise des profils de référence représentant les différentes maisons.",
+
+        skills:
+          "Python, algorithmique, structures de données, dictionnaires, fichiers TXT et JSON, distance euclidienne, classification, k plus proches voisins, tests unitaires, analyse de résultats et travail en binôme.",
       },
     },
+
     parcours: {
       label: "MON PARCOURS",
       title: "Mon parcours académique",
@@ -171,6 +275,7 @@ const translations = {
           "Je poursuis mon parcours en approfondissant mes compétences techniques à travers des projets universitaires et des mises en pratique concrètes.",
       },
     },
+
     motivation: {
       label: "MA MOTIVATION",
       title: "Pourquoi l'informatique ?",
@@ -204,6 +309,7 @@ const translations = {
         },
       },
     },
+
     experiences: {
       label: "MON EXPÉRIENCE",
       title: "Expériences professionnelles",
@@ -222,6 +328,7 @@ const translations = {
           "Garde d'enfants et accompagnement dans les activités quotidiennes, avec gestion des responsabilités et organisation des activités.",
       },
     },
+
     interests: {
       label: "MES CENTRES D'INTÉRÊT",
       title: "Centres d'intérêt",
@@ -232,51 +339,52 @@ const translations = {
         title: "Basket",
         description:
           "Le basket m'intéresse pour son côté collectif et stratégique. J'aime l'esprit d'équipe, la communication et la recherche constante de progression.",
-        tags: ["Teamwork", "Strategy", "Discipline"],
+        tags: ["Esprit d'équipe", "Stratégie", "Discipline"],
       },
 
       math: {
         title: "Mathématiques",
         description:
           "Les mathématiques ont toujours fait partie de mon parcours. J'apprécie particulièrement la logique, la résolution de problèmes et le raisonnement.",
-        tags: ["Logic", "Problem Solving", "Analysis"],
+        tags: ["Logique", "Résolution de problèmes", "Analyse"],
       },
 
       cooking: {
         title: "Cuisine",
         description:
           "La cuisine est pour moi un moyen d'être créative et de découvrir de nouvelles saveurs. J'aime préparer de nouveaux plats et expérimenter différentes recettes.",
-        tags: ["Creativity", "Discovery", "Recipes"],
+        tags: ["Créativité", "Découverte", "Recettes"],
       },
 
       reading: {
         title: "Lecture",
         description:
           "La lecture me permet de découvrir de nouvelles idées, d'explorer différents univers et de développer ma curiosité.",
-        tags: ["Curiosity", "Learning", "Discovery"],
+        tags: ["Curiosité", "Apprentissage", "Découverte"],
       },
 
       gaming: {
         title: "Gaming",
         description:
           "J'aime les jeux vidéo pour leurs univers interactifs et leurs défis. Certains jeux développent également la réflexion, la stratégie et la résolution de problèmes.",
-        tags: ["Strategy", "Problem Solving", "Creativity"],
+        tags: ["Stratégie", "Résolution de problèmes", "Créativité"],
       },
 
       civil: {
         title: "Génie civil",
         description:
           "Mon parcours en génie civil m'a permis de découvrir un domaine technique différent de l'informatique. J'ai apprécié le côté concret, la précision et la conception de projets.",
-        tags: ["Technical", "Design", "Precision"],
+        tags: ["Technique", "Conception", "Précision"],
       },
 
       cinema: {
         title: "Cinéma",
         description:
           "Le cinéma me plaît pour les histoires, les univers et les différentes façons de transmettre des émotions et des idées.",
-        tags: ["Stories", "Creativity", "Discovery"],
+        tags: ["Histoires", "Créativité", "Découverte"],
       },
     },
+
     languages: {
       label: "MES LANGUES",
       title: "Langues",
@@ -303,6 +411,7 @@ const translations = {
         level: "Langue maternelle · Niveau C2",
       },
     },
+
     cv: {
       label: "VOUS SOUHAITEZ EN SAVOIR PLUS ?",
       title: "Découvrez mon parcours",
@@ -311,6 +420,7 @@ const translations = {
       view: "Voir mon CV",
       download: "Télécharger mon CV",
     },
+
     contact: {
       label: "CONTACT",
       title: "Travaillons ensemble",
@@ -332,6 +442,7 @@ const translations = {
         text: "Voir mes projets",
       },
     },
+
     footer: {
       description: "Portfolio personnel · BUT Informatique",
     },
@@ -360,6 +471,7 @@ const translations = {
       projectsButton: "View my projects",
       contactButton: "Contact me",
     },
+
     about: {
       label: "ABOUT ME",
       title: "Who am I?",
@@ -393,6 +505,7 @@ const translations = {
         },
       },
     },
+
     skills: {
       label: "MY SKILLS",
       title: "What I can do",
@@ -421,6 +534,7 @@ const translations = {
           "Use of development tools and collaborative working environments.",
       },
     },
+
     projects: {
       label: "MY PROJECTS",
       title: "Some projects I have worked on",
@@ -431,46 +545,147 @@ const translations = {
       modalLabel: "PROJECT",
       technologies: "Technologies used",
 
-      station: {
-        title: "Gas Station",
+      database: {
+        title: "Databases",
+
         description:
-          "Design and development of a database to manage information for a gas station. Teamwork involving database modeling, SQL development and data management.",
+          "Database design and exploitation through several university projects.",
+
         modalDescription:
-          "Team project focused on the design and management of a database for a gas station.",
+          "This project brings together two projects focused on databases. They allowed me to work on data modelling, database creation, management and exploitation of relational databases.",
+
+        sae104:
+          "SAE104 allowed me to work on the design and exploitation of a database, applying data modelling and SQL queries.",
+
+        sae204:
+          "SAE204 focused on analysing service stations and fuel prices using open data. I worked on database modelling, table creation, relationships between data, SQL queries, as well as data processing and analysis using Python and Grafana.",
+
+        skills:
+          "Data modelling, relational databases, SQL, data processing, data analysis and visualization.",
       },
 
       linux: {
         title: "Linux Environment",
-        description:
-          "Setup and configuration of a Linux environment with user management, permissions, services and various system tools.",
-        modalDescription:
-          "Setup and configuration of a Linux environment with user management, permissions, services and various system tools.",
-      },
 
-      eaux: {
-        title: "Water Quality",
         description:
-          "Design of a database from a conceptual model, database creation and SQL queries. The data was also processed using Python.",
+          "Installation and configuration of a Linux environment, followed by the setup of system and network services through two university projects.",
+
         modalDescription:
-          "Design of a database from a conceptual model, database creation and SQL queries. The data was also processed using Python.",
+          "This project brings together two projects based on a Linux environment. SAE1.03 focused on installing and configuring a development workstation, while SAE2.03 focused on installing and configuring network services.",
+
+        sae103:
+          "Installation of Kubuntu on a refurbished PC from scratch, including manual disk partitioning, Eduroam network configuration and the setup of a development environment. I installed and configured Apache, PHP, PostgreSQL, Visual Studio Code, Java and Python. I also worked with the Linux terminal, file and directory management, access permissions and file ownership.",
+
+        sae203:
+          "Setup of network services on the previously installed Linux environment. The project included configuring a LAMP environment with Apache, PHP and MariaDB, creating users and databases, and setting up FTP using vsftpd and SSH services. I also used VirtualBox and Marionnet for network exercises and Wireshark to analyse network traffic.",
+
+        skills:
+          "Linux administration, command line, service installation and configuration, user and permission management, databases, web development, networking, virtualization and network traffic analysis.",
       },
 
       nuit: {
         title: "La Nuit de l’Info",
+
         description:
-          "Participation in a team web development project, focusing on user interface, accessibility and responsible digital practices.",
+          "Team-based development of a web application focused on inclusive, responsible and sustainable digital practices as part of La Nuit de l’Info 2025.",
+
         modalDescription:
-          "Participation in a team web development project, focusing on user interface, accessibility and responsible digital practices.",
+          "Team project developed as part of La Nuit de l’Info 2025. The challenge focused on the NIRD approach (Inclusive, Responsible and Sustainable Digital Technology) and the creation of a web application to raise awareness among different audiences about digital autonomy and responsibility.",
+
+        context:
+          "The project was based on the NIRD approach, which aims to help schools reduce their digital dependencies and progressively adopt more inclusive, responsible and sustainable solutions.",
+
+        mission:
+          "Our team had to design and develop a web application introducing the NIRD approach in a fun, educational and engaging way. The application was intended to encourage understanding, contribution and the gradual adoption of responsible digital solutions.",
+
+        features: [
+          "Design of an attractive and accessible web interface",
+          "Educational presentation of the NIRD approach",
+          "Highlighting solutions and alternatives promoted by NIRD",
+          "Creation of an interactive and engaging experience",
+          "Team-based design and development",
+          "Consideration of accessibility and responsible digital practices",
+          "Use of royalty-free resources",
+        ],
+
+        skills:
+          "Web development, HTML, CSS, JavaScript, interface design, accessibility, responsible digital practices, teamwork and project management under time constraints.",
       },
 
       findmyword: {
         title: "FindMyWord",
+
         description:
-          "Development of a Java word-guessing game. UML design and implementation of object-oriented programming principles, including attempt management and letter analysis.",
+          "Development of a Java console application inspired by Wordle. The project applies object-oriented programming principles through player, game, word and data-source management.",
+
         modalDescription:
-          "Development of a Java word-guessing game inspired by Wordle. The project includes UML design and implementation of object-oriented programming principles, with attempt management, validation, letter analysis, and victory or defeat detection.",
+          "A team project developed as part of SAÉ 2.01 – Object-Oriented Programming. FindMyWord follows the main rules of Wordle: the player must guess a secret five-letter word within a maximum of six attempts.",
+
+        context:
+          "Design and development of a Java console application as part of a project focused on object-oriented programming.",
+
+        features: [
+          "Multiplayer game with alternating turns",
+          "Management of multiple rounds",
+          "Dynamic score calculation",
+          "Validation of user input",
+          "Letter analysis using OK / PRESENT / ABSENT states",
+          "Game grid and progress display",
+          "Random word selection from a JSON file",
+          "Testing with a fixed secret word",
+          "Input error handling",
+        ],
+
+        architecture:
+          "The application is organized into several packages to separate responsibilities: model, view and repository. This structure separates game logic, display and data access.",
+
+        classes:
+          "The main classes are Word, StatutLettre, Joueur, Game, WordRepository, RetrieveWordsFromJSON, RetrieveFixeWordsFromJSON and Main.",
+
+        skills:
+          "Java, object-oriented programming, UML, encapsulation, polymorphism, JSON, unit testing, debugging and teamwork.",
+
+        report:
+          "https://docs.google.com/document/d/1mS6qzF9-eZYq88KGqXA3tNKeJfCqsaJIuL-M4hh3828/edit?tab=t.0",
+
+        reportButton: "View the report ↗",
+      },
+
+      // =====================================
+      // PROJECT 05 — HOGWARTS
+      // =====================================
+
+      poudlard: {
+        title: "The New Not-So-Magical Sorting Hat",
+
+        description:
+          "Pair development of a Python program designed to sort students into the four Hogwarts houses based on their questionnaire answers.",
+
+        modalDescription:
+          "Pair project developed as part of SAEs 1.01 and 1.02. The project involved developing and improving a computer-based method for assigning students to Hogwarts houses based on their questionnaire answers.",
+
+        context:
+          "In SAE 1.01, a first method assigns students to one of the four houses according to their answers to four questions associated with the characteristics of each house. In SAE 1.02, this method is improved using ten questions and by comparing students' answers with reference profiles representing the different houses.",
+
+        features: [
+          "Reading and processing answer files",
+          "Creation and manipulation of arrays and dictionaries",
+          "Student assignment based on questionnaire answers",
+          "Implementation of unit tests",
+          "Calculation of Euclidean distance between answers",
+          "Student classification based on the closest reference",
+          "Implementation of the k-nearest neighbors method",
+          "Experimental comparison of different classification methods",
+        ],
+
+        architecture:
+          "SAE 1.01 uses a data structure containing each student's name and four answers. SAE 1.02 evolves this structure into a dictionary associating each student with ten answers and uses reference profiles representing the different houses.",
+
+        skills:
+          "Python, algorithms, data structures, dictionaries, TXT and JSON files, Euclidean distance, classification, k-nearest neighbors, unit testing, result analysis and teamwork.",
       },
     },
+
     parcours: {
       label: "MY EDUCATION",
       title: "My academic journey",
@@ -507,6 +722,7 @@ const translations = {
           "I am continuing my studies by strengthening my technical skills through university projects and practical work.",
       },
     },
+
     motivation: {
       label: "MY MOTIVATION",
       title: "Why Computer Science?",
@@ -539,6 +755,7 @@ const translations = {
         },
       },
     },
+
     experiences: {
       label: "MY EXPERIENCE",
       title: "Professional Experience",
@@ -557,6 +774,7 @@ const translations = {
           "Looking after children and supporting them in their daily activities, while managing responsibilities and organizing activities.",
       },
     },
+
     interests: {
       label: "MY INTERESTS",
       title: "Interests",
@@ -612,6 +830,7 @@ const translations = {
         tags: ["Stories", "Creativity", "Discovery"],
       },
     },
+
     languages: {
       label: "MY LANGUAGES",
       title: "Languages",
@@ -637,6 +856,7 @@ const translations = {
         level: "Native language · C2 Level",
       },
     },
+
     cv: {
       label: "WANT TO KNOW MORE?",
       title: "Discover my background",
@@ -645,6 +865,7 @@ const translations = {
       view: "View my CV",
       download: "Download my CV",
     },
+
     contact: {
       label: "CONTACT",
       title: "Let's work together",
@@ -666,6 +887,7 @@ const translations = {
         text: "View my projects",
       },
     },
+
     footer: {
       description: "Personal portfolio · Computer Science",
     },
